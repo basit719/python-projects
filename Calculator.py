@@ -1,3 +1,11 @@
+# This function adds two numbers
+def add(x, y):
+    return x + y
+
+# This function subtracts two numbers
+def subtract(x, y):
+    return x - y
+
 print("Select operation.")
 print("1.Add")
 print("2.Subtract")
@@ -18,6 +26,12 @@ while True:
             print("Invalid input. Please enter a number.")
             continue
         
+        if choice == '1':
+            print(num1, "+", num2, "=", add(num1, num2))
+
+        elif choice == '2':
+            print(num1, "-", num2, "=", subtract(num1, num2))
+            
         # check if user wants another calculation
         # break the while loop if answer is no
         next_calculation = input("Let's do next calculation? (yes/no): ")
